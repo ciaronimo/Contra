@@ -16,7 +16,10 @@ public class PlayerMovement : MonoBehaviour
     public int jumpForce;
     public bool isGrounded;
     public bool isFiring;
-    public bool isCape;
+    public bool isUpDiagonal;
+    public bool isDownDiagonal;
+    public bool isUp;
+    public bool isProne;
     public LayerMask isGroundLayer;
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -31,26 +34,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Current Score is " + _score);
         }
     }
-    /*
-    public int lives
-    {
-        get { return _lives; }
-        set
-        {
-            _lives = value;
-            if (_lives > maxLives)
-            {
-                _lives = maxLives;
-            }
-            else if (_lives < 0)
-            {
-                //run game over code here
-            }
 
-            Debug.Log("Current lives are " + lives);
-        }
-    }
-    */
 
 
     // Start is called before the first frame update
@@ -88,22 +72,183 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
 
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded && !Input.GetKey(KeyCode.S))
         {
             rb.velocity = Vector2.zero;
             rb.AddForce(Vector2.up * jumpForce);
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
         {
-            isFiring = true;
+            isProne = true;
         }
 
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetKeyUp(KeyCode.S))
         {
-            isFiring = false;
+            isProne = false;
+        }
+
+        if (GetComponent<PlayerFire>().rapidFire == true)
+        {
+            if (Input.GetButton("Fire1") && !Input.GetKey(KeyCode.W))
+            {
+                isFiring = true;
+                isUpDiagonal = false;
+                isDownDiagonal = false;
+                isUp = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonUp("Fire1"))
+            {
+                isFiring = false;
+                isUpDiagonal = false;
+                isDownDiagonal = false;
+                isUp = false;
+                
+            }
+
+            if (Input.GetButton("Fire1") && Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+            {
+                isUpDiagonal = true;
+                isDownDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButton("Fire1") && Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
+            {
+                isUpDiagonal = true;
+                isDownDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButton("Fire1") && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
+            {
+                isDownDiagonal = true;
+                isUpDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButton("Fire1") && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+
+            {
+                isDownDiagonal = true;
+                isUpDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+            if (Input.GetButton("Fire1") && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                isUp = true;
+                isDownDiagonal = false;
+                isUpDiagonal = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            {
+                isProne = true;
+            }
+        }
+        else
+        {
+            
+            if (Input.GetButtonDown("Fire1") && !Input.GetKey(KeyCode.W))
+            {
+                
+                isFiring = true;
+                isUpDiagonal = false;
+                isDownDiagonal = false;
+                isUp = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonUp("Fire1"))
+            {
+                isFiring = false;
+                isUpDiagonal = false;
+                isDownDiagonal = false;
+                isUp = false;
+                
+            }
+
+            if (Input.GetButtonDown("Fire1") && Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+            {
+                isUpDiagonal = true;
+                isDownDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonDown("Fire1") && Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
+            {
+                isUpDiagonal = true;
+                isDownDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonDown("Fire1") && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
+            {
+                isDownDiagonal = true;
+                isUpDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonDown("Fire1") && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+
+            {
+                isDownDiagonal = true;
+                isUpDiagonal = false;
+                isUp = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonDown("Fire1") && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                isUp = true;
+                isDownDiagonal = false;
+                isUpDiagonal = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetButtonDown("Fire1") && Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
+            {
+                isUp = true;
+                isDownDiagonal = false;
+                isUpDiagonal = false;
+                isFiring = false;
+                isProne = false;
+            }
+
+            if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            {
+                isProne = true;
+            }
+
+            if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A))
+            {
+                isProne = true;
+            }
+
 
         }
+
+
 
         if (playerSprite.flipX && horizontalInput > 0 || !playerSprite.flipX && horizontalInput < 0)
             playerSprite.flipX = !playerSprite.flipX;
@@ -114,5 +259,9 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("speed", Mathf.Abs(horizontalInput));
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isFiring", isFiring);
+        anim.SetBool("isUpDiagonal", isUpDiagonal);
+        anim.SetBool("isDownDiagonal", isDownDiagonal);
+        anim.SetBool("isUp", isUp);
+        anim.SetBool("isProne", isProne);
     }
 }

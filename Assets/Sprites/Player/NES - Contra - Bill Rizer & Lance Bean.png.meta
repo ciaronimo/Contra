@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8689991667420190741
-    second: NES - Contra - Bill Rizer & Lance Bean_0
+    second: shootUp1
   - first:
       213: -7914079296390950500
-    second: NES - Contra - Bill Rizer & Lance Bean_1
+    second: shootUp2
   - first:
       213: -1112540174957815319
     second: NES - Contra - Bill Rizer & Lance Bean_2
@@ -49,7 +49,7 @@ TextureImporter:
     second: idle2
   - first:
       213: 6152951045423901791
-    second: NES - Contra - Bill Rizer & Lance Bean_15
+    second: projectile
   - first:
       213: 5804118286217020914
     second: NES - Contra - Bill Rizer & Lance Bean_16
@@ -64,10 +64,10 @@ TextureImporter:
     second: NES - Contra - Bill Rizer & Lance Bean_19
   - first:
       213: 3894927606136178107
-    second: NES - Contra - Bill Rizer & Lance Bean_20
+    second: playerProne1
   - first:
       213: 8030937428476008837
-    second: NES - Contra - Bill Rizer & Lance Bean_21
+    second: playerProne2
   - first:
       213: -2093143877380252191
     second: NES - Contra - Bill Rizer & Lance Bean_22
@@ -202,19 +202,19 @@ TextureImporter:
     second: NES - Contra - Bill Rizer & Lance Bean_65
   - first:
       213: -5994310456094811704
-    second: NES - Contra - Bill Rizer & Lance Bean_66
+    second: PlayerRunShootDiagonal2
   - first:
       213: 7528737057614347945
-    second: NES - Contra - Bill Rizer & Lance Bean_67
+    second: PlayerRunShootDiagonal1
   - first:
       213: -785140018941411241
-    second: NES - Contra - Bill Rizer & Lance Bean_68
+    second: PlayerRunShootDiagonal4
   - first:
       213: 4366680141047220369
-    second: NES - Contra - Bill Rizer & Lance Bean_69
+    second: PlayerRunShootDiagonal3
   - first:
       213: -7200196515380806454
-    second: NES - Contra - Bill Rizer & Lance Bean_70
+    second: PlayerRunShootDiagonal5
   - first:
       213: -5806616714017664537
     second: NES - Contra - Bill Rizer & Lance Bean_71
@@ -232,19 +232,19 @@ TextureImporter:
     second: NES - Contra - Bill Rizer & Lance Bean_75
   - first:
       213: 7693126005103223321
-    second: NES - Contra - Bill Rizer & Lance Bean_76
+    second: PlayerRunShootDiagonal6
   - first:
       213: 3389325507518730346
     second: NES - Contra - Bill Rizer & Lance Bean_77
   - first:
       213: 6033186245680329141
-    second: NES - Contra - Bill Rizer & Lance Bean_78
+    second: PlayerRunShootDownDiagonal1
   - first:
       213: -7400615447619260240
-    second: NES - Contra - Bill Rizer & Lance Bean_79
+    second: PlayerRunShootDownDiagonal3
   - first:
       213: -3505016426222845091
-    second: NES - Contra - Bill Rizer & Lance Bean_80
+    second: PlayerRunShootDownDiagonal5
   - first:
       213: -5389139867858403298
     second: NES - Contra - Bill Rizer & Lance Bean_81
@@ -262,13 +262,13 @@ TextureImporter:
     second: NES - Contra - Bill Rizer & Lance Bean_85
   - first:
       213: -5858692176267114514
-    second: NES - Contra - Bill Rizer & Lance Bean_86
+    second: PlayerRunShootDownDiagonal2
   - first:
       213: -531969956193524831
-    second: NES - Contra - Bill Rizer & Lance Bean_87
+    second: PlayerRunShootDownDiagonal4
   - first:
       213: 1149762541055914744
-    second: NES - Contra - Bill Rizer & Lance Bean_88
+    second: PlayerRunShootDownDiagonal6
   - first:
       213: 1417029434590828205
     second: NES - Contra - Bill Rizer & Lance Bean_89
@@ -523,7 +523,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_0
+      name: shootUp1
       rect:
         serializedVersion: 2
         x: 49
@@ -544,7 +544,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_1
+      name: shootUp2
       rect:
         serializedVersion: 2
         x: 64
@@ -838,7 +838,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_15
+      name: projectile
       rect:
         serializedVersion: 2
         x: 89
@@ -943,7 +943,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_20
+      name: playerProne1
       rect:
         serializedVersion: 2
         x: 79
@@ -964,7 +964,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_21
+      name: playerProne2
       rect:
         serializedVersion: 2
         x: 112
@@ -1909,13 +1909,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_66
+      name: PlayerRunShootDiagonal2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 308
-        width: 17
-        height: 36
+        width: 16
+        height: 34
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1930,7 +1930,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_67
+      name: PlayerRunShootDiagonal1
       rect:
         serializedVersion: 2
         x: 1
@@ -1951,7 +1951,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_68
+      name: PlayerRunShootDiagonal4
       rect:
         serializedVersion: 2
         x: 18
@@ -1972,7 +1972,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_69
+      name: PlayerRunShootDiagonal3
       rect:
         serializedVersion: 2
         x: 18
@@ -1993,7 +1993,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_70
+      name: PlayerRunShootDiagonal5
       rect:
         serializedVersion: 2
         x: 38
@@ -2119,7 +2119,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_76
+      name: PlayerRunShootDiagonal6
       rect:
         serializedVersion: 2
         x: 38
@@ -2161,7 +2161,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_78
+      name: PlayerRunShootDownDiagonal1
       rect:
         serializedVersion: 2
         x: 1
@@ -2182,7 +2182,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_79
+      name: PlayerRunShootDownDiagonal3
       rect:
         serializedVersion: 2
         x: 22
@@ -2203,7 +2203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_80
+      name: PlayerRunShootDownDiagonal5
       rect:
         serializedVersion: 2
         x: 44
@@ -2329,7 +2329,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_86
+      name: PlayerRunShootDownDiagonal2
       rect:
         serializedVersion: 2
         x: 1
@@ -2350,7 +2350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_87
+      name: PlayerRunShootDownDiagonal4
       rect:
         serializedVersion: 2
         x: 22
@@ -2371,7 +2371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_88
+      name: PlayerRunShootDownDiagonal6
       rect:
         serializedVersion: 2
         x: 44
