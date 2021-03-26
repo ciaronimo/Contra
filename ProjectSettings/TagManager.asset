@@ -8,6 +8,9 @@ TagManager:
   - Platforms
   - projectile
   - player
+  - barrier
+  - camera
+  - enemyProjectile
   layers:
   - Default
   - TransparentFX
@@ -18,10 +21,10 @@ TagManager:
   - ground
   - playerProjectile
   - player
-  - 
-  - 
-  - 
-  - 
+  - camera
+  - enemies
+  - enemyProjectile
+  - enemyBarriers
   - 
   - 
   - 

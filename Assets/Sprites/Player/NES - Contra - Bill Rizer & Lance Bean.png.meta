@@ -145,19 +145,19 @@ TextureImporter:
     second: runShootStraight5
   - first:
       213: 9181739691218459703
-    second: NES - Contra - Bill Rizer & Lance Bean_47
+    second: death0
   - first:
       213: 7739318913754882601
-    second: NES - Contra - Bill Rizer & Lance Bean_48
+    second: death1
   - first:
       213: -1996713369845017494
-    second: NES - Contra - Bill Rizer & Lance Bean_49
+    second: death2
   - first:
       213: 6983470903634907220
-    second: NES - Contra - Bill Rizer & Lance Bean_50
+    second: death3
   - first:
       213: -4948432303009953729
-    second: NES - Contra - Bill Rizer & Lance Bean_51
+    second: death4
   - first:
       213: -7409960091804240307
     second: NES - Contra - Bill Rizer & Lance Bean_52
@@ -1510,7 +1510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_47
+      name: death0
       rect:
         serializedVersion: 2
         x: 78
@@ -1531,7 +1531,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_48
+      name: death1
       rect:
         serializedVersion: 2
         x: 104
@@ -1552,7 +1552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_49
+      name: death2
       rect:
         serializedVersion: 2
         x: 122
@@ -1573,7 +1573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_50
+      name: death3
       rect:
         serializedVersion: 2
         x: 148
@@ -1594,7 +1594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Contra - Bill Rizer & Lance Bean_51
+      name: death4
       rect:
         serializedVersion: 2
         x: 168

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VerticalPlatform : MonoBehaviour
 {
-    private PlatformEffector2D effector;
+    public PlatformEffector2D effector;
     public bool isTouching;
     public float playerCheckRadius;
     public LayerMask isTouchingPlayer;
@@ -31,6 +31,11 @@ public class VerticalPlatform : MonoBehaviour
     {
 
         if (Input.GetKeyDown(KeyCode.Space) && !Input.GetKey(KeyCode.S))
+        {
+            effector.rotationalOffset = 0;
+        }
+
+        if (GameManager.instance.health <= 0)
         {
             effector.rotationalOffset = 0;
         }

@@ -34,7 +34,7 @@ public class PowerUp : MonoBehaviour
                     break;
                 case CollectibleType.COLLECTIBLE:
                     Destroy(gameObject);
-                    coll.GetComponent<PlayerMovement>().score++;
+                    GameManager.instance.lives++;
 
                     break;
 
